@@ -3,53 +3,57 @@
 <html>
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles.css">
+<style>
+form{
+background-color:lightblue;
+
+}
+</style>
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
+<!-- the entire body must be written by student -->
+<form >
+<h2>Registration Form</h2>
+<input required id="name"type="text" name="name" placeholder="Name">
+<br><br>
+<input required type="email" name="email" placeholder="Email"><br><br>
+<lable for="gender_m">
+<input required type="radio" value="Male" name="gender" id="gender_m">Male
+</lable>
+<lable for="gender_f">
+<input required type="radio" value="Female" name="gender" id="gender_f">Female
+</lable>
+<lable for="gender_O">
+<input required type="radio" value="Other" name="gender" id="gender_O">Other
+</lable>
+
+<br><br>
+Car Brand :</lable>
+<select required>
+<option value="">--Please choose an option--</option></option>
+<option>Audi</option>
+<option>Lambo</option>
+<option>Safari</option>
+<option>McLaren</option>
+</select>
+<br><br>
+<input required type="number" name="age "id="age" placeholder="Age" >
+<br><br>
+<input type="date" required> <br><br>
+<input type="tel" name="telephone"id="tel" placeholder="xxx-xxx-xxxx" >
+<br><br>
+<input required type="password" name="pass"id="password" placeholder="password">
+<br><br>
+<input required type="checkbox" id="tos" placeholder="password">I agree to the TOS
+<br><br>
+
+<input type="submit">
+
+</form>
+<script type="text/javascript" src="./script.js">
 </script>
-
-	<form href="#" method="post">
-<!-- 		<caption>Car Signup form</caption> -->
-		<label for="name">Name</label>
-		<input type="text" id="name" placeholder="Name" required>
-		
-		<label for="email">Email</label>
-		<input type="email" id="email" placeholder="Email" required>
-		
-		<input type="radio" id="gender_m" name="gender" required>
-		<label for="gender_m">Male</label>
-		<input type="radio" id="gender_f" name="gender" required>
-		<label for="gender_f">Female</label><br>
-		
-		<label for="cars">Car Brands</label>
-		<select id="cars" placeholder="Please choose an option" required>
-			<option>Audi</option>
-			<option>Tesla</option>
-			<option>BMW</option>
-			<option>Mercedes</option>
-		</select><br>
-		
-		<label for="age">Age</label>
-		<input type="number" id="age" placeholder="Age" required><br>
-		
-		<label for="dob">DOB</label>
-		<input type="date" id="dob" required>
-		
-		<label for="tel">Phone Number</label>
-		<input type="tel" id="tel" placeholder="xxx-xxx-xxxx" required>
-		
-		<label for="password">Password</label>
-		<input type="password" id="password" placeholder="Password" required>
-		
-		<label for="tos">T&C</label>
-		<input type="checkbox" id="tos" required>
-
-<!-- 		<label for="submit">Submit</label> -->
-		<button type="submit" id="submit">Submit</button>
-	</form>
 
 </body>
 
